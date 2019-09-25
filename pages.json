@@ -1,0 +1,35 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/selectPage/selectPage",
+			"style": {
+				"navigationBarTitleText": "中国象棋"
+			}
+		},
+		{
+			"path": "pages/AIPage/AiPage",
+			"style": {
+				"navigationBarTitleText": "中国象棋"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "中国象棋"
+			}
+		}
+	],
+	 "condition": { //模式配置，仅开发期间生效
+        "current": 0, //当前激活的模式（list 的索引项）
+        "list": [{
+            "name": "test", //模式名称
+            "path": "pages/component/view/index" //启动页面，必选
+        }]
+    },
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "中国象棋123",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
